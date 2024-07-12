@@ -20,8 +20,7 @@
   3.1. [Data extraction](#data-extraction)  
   3.2. [Data Transformation](#data-transformation)  
   3.3. [Data Loading](#data-loading)
-
-   3.4. [Pipeline Testing](#pipeline-validate)  
+  3.4. [Pipeline Testing](#pipeline-validate)  
   3.5. [Data Reporting](#data-reporting)
   
 5. [Technology used](#technology)
