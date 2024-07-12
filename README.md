@@ -1,6 +1,6 @@
 <div align="center">
   <a href="#">
-    <img src="" alt="Banner" width="720">
+    <img src="https://github.com/IrisWangAU/Retail_Data_Pipeline/blob/main/asset/walmartecomm.jpg" alt="Banner" width="720">
   </a>
 
   <div id="user-content-toc">
@@ -26,6 +26,8 @@
 4. [Technology used](#technology)
 5. [Contact](#contact)
 
+<br>
+
 <a name="introduction"></a>
 ## 🔬 Project Overview 
 
@@ -33,6 +35,7 @@ Walmart is the biggest retail store in the United States. Just like others, they
 
 In this project, I build a ETL data pipeline for the analysis of supply and demand around the holidays, along with conducting a preliminary analysis of the data.
 
+<br>
 
 ### 💾 Dataset
 
@@ -40,7 +43,9 @@ There are two data sources: grocery sales and complementary data.
 
 The `grocery_sales` table have the following features:
 
-# `grocery_sales`
+<br>
+
+#### **`grocery_sales`**
 - `"index"` - unique ID of the row
 - `"Store_ID"` - the store number
 - `"Date"` - the week of sales
@@ -48,7 +53,7 @@ The `grocery_sales` table have the following features:
 
 The `extra_data.parquet` file contains complementary data:
 
-# `extra_data.parquet`
+#### **`extra_data.parquet`**
 - `"IsHoliday"` - Whether the week contains a public holiday - 1 if yes, 0 if no.
 - `"Temperature"` - Temperature on the day of sale
 - `"Fuel_Price"` - Cost of fuel in the region
@@ -78,6 +83,7 @@ After merging and cleaning the data, the monthly sales of Walmart are stored  as
 
 Finally, the `clean_data` and `agg_data` files are stored as csv files.
 
+<br>
 
 ### 🎯 Project Goals
 
@@ -87,6 +93,8 @@ Finally, the `clean_data` and `agg_data` files are stored as csv files.
 - Save the cleaned data into a CSV file.
 - Validate the existence of the final cleaned data in the CSV file.
 - Create a data visualization in Power BI.
+
+<br>
 
 <a name="key-insights"></a>
 ## 🕵️ Key Insights
@@ -100,14 +108,20 @@ Finally, the `clean_data` and `agg_data` files are stored as csv files.
   - In December, Walmart experiences the highest weekly sales (over 38K), followed by November (over 36K).
   > This trend can be attributed to increased consumer purchasing at Walmart in preparation for Christmas.
 
+<br>
+
 <a name="project-architecture"></a>
 ## 📝 Project Architecture
+
+<br>
 
 <a name="data-extraction"></a>
 ### 📤 Data Ingestion
 - Extract Data from source file
 
-![extract]()
+![extract](https://github.com/IrisWangAU/Retail_Data_Pipeline/blob/main/asset/Extract.PNG)
+
+<br>
 
 <a name="data-transformation"></a>
 ### ⚙️ Data Transformation
@@ -117,8 +131,9 @@ Finally, the `clean_data` and `agg_data` files are stored as csv files.
 - Create a new column for Month from the Date Column.
 - Create a new Data Frame for Average Weekly Sales by Month using aggregation.
 
-![Transform]()
+![Transform](https://github.com/IrisWangAU/Retail_Data_Pipeline/blob/main/asset/Transform.PNG)
 
+<br>
 
 <a name="data-loading"></a>
 
@@ -126,7 +141,9 @@ Finally, the `clean_data` and `agg_data` files are stored as csv files.
 
 - Save the Cleaned and Aggregated Data into CSV files
 
-![SaveData]()
+![SaveData](https://github.com/IrisWangAU/Retail_Data_Pipeline/blob/main/asset/savedata.PNG)
+
+<br>
 
 <a name="pipeline-validate"></a>
 
@@ -135,15 +152,19 @@ Finally, the `clean_data` and `agg_data` files are stored as csv files.
 - Create a function to validate the existence of cleaned data and aggregated data files in the path
 - Use Try-Except to run pipeline
 
-![validate]()
-![pipelinerun]()
+![validate](https://github.com/IrisWangAU/Retail_Data_Pipeline/blob/main/asset/validate.PNG)
+![pipelinerun](https://github.com/IrisWangAU/Retail_Data_Pipeline/blob/main/asset/pipelinerun.PNG)
 
+<br>
 
 <a name="data-reporting"></a>
 ### 📊 Data Reporting
 - Connect PowerBI with cleaned and aggregated data to perform analysis
 
-![salesreport]()
+![salesreport](https://github.com/IrisWangAU/Retail_Data_Pipeline/blob/main/asset/WalmartSalesReport.PNG)
+
+
+<br>
 
 <a name="technology"></a>
 
@@ -155,6 +176,8 @@ Finally, the `clean_data` and `agg_data` files are stored as csv files.
 - **Data Loading**: Python Pandas
 - **Data Visualization**: PowerBI
 - **Pipeline Testing**: Python Logging package
+
+<br>
 
 <a name="contact"></a>
 
