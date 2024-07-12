@@ -23,8 +23,8 @@
   3.4. [Pipeline Testing](#pipeline-validate)  
   3.5. [Data Reporting](#data-reporting)
   
-4. [Technology used](#technology)
-5. [Contact](#contact)
+5. [Technology used](#technology)
+6. [Contact](#contact)
 
 <br>
 
